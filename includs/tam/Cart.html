@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/admin/layout/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/admin/layout/css/style.css">
+    <link rel="stylesheet" href="/admin/layout/css/FrameWork.css">
+    <link rel="stylesheet" href="/admin/layout/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cairo:wght@300;400;700&family=Epilogue:wght@400;600;700&family=Merienda+One&family=Montserrat:wght@300;700&family=Nunito:wght@300;400;600&family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&family=Roboto:wght@100;300;400;500;700&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <!-- Hambargers css -->
+    <link rel="stylesheet" href="/admin/layout/css/Hambargers.css">
+    <link rel="stylesheet" href="/admin/layout/css/hamburgers/hamburgers.css">
+    <!-- phone  number -->
+    <link rel="stylesheet" href="/admin/layout/phone-number-with-country-code/build/css/intlTelInput.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- py -->
+    <link rel="stylesheet" href="/admin/layout/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- sweet js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="">LOGO</a>
+
+            <div class="search">
+                <span class="i-ser"><i class="fa fa-search" aria-hidden="true"></i></span>
+                <input id="search" type="search" class="form-control" placeholder="Search any thing">
+                <span onclick="clear_fild()" class="i-remo" id="search"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+
+            <ul class="icons">
+                <li><a class="loginbtn ">Log in</a></li>
+                <li><a href="" class="favourites"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="#" class="user" id="accountSettings" onclick="shoowDropDown()"><i
+                            class="fa-regular fa-user"></i></a></li>
+
+                <ul class="dropdown">
+                    <li><a href=""><i class="fa-solid fa-user-pen"></i>Edit Profile</a></li>
+                    <li><a href=""><i class="fa-solid fa-gear"></i>Settings</a></li>
+                    <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+                </ul>
+
+                <li><a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Start mega menu -->
+    <div class="mega-menu">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hamburger hamburger--collapse " id="hamburger">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+            <div class="memu"></div>
+            <ul class="menu-main">
+                <div class="mobile-menu-head">
+                    <div class="go-back"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                    <div class="currnet-menu-title">Shop</div>
+                    <div class="close-menu">&times;</div>
+                </div>
+                <li class="has-children"><a>Jewelry and accessories </a>
+                    <i class="fa fa-angle-down"></i>
+                    <div class="sub-menu" id="sub-menu">
+                        <ul>
+                            <li><a>rings</a>
+                                <ul>
+                                    <li><a href="">Rings with various stones</a></li>
+                                    <li><a href="">stackable rings</a></li>
+                                    <li><a href="">Alliances</a></li>
+                                    <li><a href="">Lonely</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Earrings</a>
+                                <ul>
+                                    <li><a href="">Rings with various stones</a></li>
+                                    <li><a href="">stackable rings</a></li>
+                                    <li><a href="">Alliances</a></li>
+                                    <li><a href="">Lonely</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">necklaces</a>
+                                <ul>
+                                    <li><a href="">Rings with various stones</a></li>
+                                    <li><a href="">stackable rings</a></li>
+                                    <li><a href="">Alliances</a></li>
+                                    <li><a href="">Lonely</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">bracelets</a>
+                                <ul>
+                                    <li><a href="">Rings with various stones</a></li>
+                                    <li><a href="">stackable rings</a></li>
+                                    <li><a href="">Alliances</a></li>
+                                    <li><a href="">Lonely</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Jewelry and body jewelry</a>
+                                <ul>
+                                    <li><a href="">Rings with various stones</a></li>
+                                    <li><a href="">stackable rings</a></li>
+                                    <li><a href="">Alliances</a></li>
+                                    <li><a href="">Lonely</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="has-children"><a>Clothes and shoes </a><i class="fa fa-angle-down"></i>
+
+                </li>
+                <li class="has-children"><a>home and decoration</a><i class="fa fa-angle-down"></i></li>
+                <li class="has-children"><a>toys and leisure</a><i class="fa fa-angle-down"></i></li>
+                <li class="has-children"><a>Art and collectibles </a><i class="fa fa-angle-down"></i></li>
+                <li class="has-children"><a>Tools </a><i class="fa fa-angle-down"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="site-content">
+        <div class="container">
+            <div class="cartShoping">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>Order Summary</h4>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row orderSummary">
+                                    <div class="col-lg-12 itemCol">
+
+                                        <table >
+                                            <thead>
+                                                <tr>
+                                                    <th>Itam Name</th>
+                                                    <th>Quantity</th>
+                                                    <th>Price</th>
+                                                    <th>Total</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <td>
+                                                    <div class="itemInfo">
+                                                        <img src="/admin/layout/imges/proudact/ASR1501ST0269 (1).jpg" alt="" width="50" height="50">
+                                                        <div class="context">
+                                                            <h5 class="itemName">Ipone 11 Pro Max</h5>
+                                                            <span class="SubCat">Apple</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>2</td>
+                                                <td>33</td>
+                                                <td>
+                                                    <div class="price">
+                                                        <p class="priceitems">798$</p>
+                                                        
+                                                    </div>
+                                                </td>
+                                                <td><a href="#"><i class="fa-solid fa-xmark"></i></a></td>
+                                            </tbody>
+                                        </table>
+
+
+
+                                    </div>
+                                </div>
+                                <div class="row confirmOrder">
+                                    <div class="col-lg-12">
+                                        <div class="totol">
+                                            <span>Totol (USD)</span>
+                                            <h6>$894</h6>
+                                        </div>
+                                        <div class="confirmbtn">
+                                            <button class="confirm" type="submit" form="my-form">Confirm Order</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12 DeliveryInfo">
+                                <h4>Delivery Information</h4>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <form action="" id="my-form" method="get" onsubmit="return PaymentMethod()">
+                                            <div class="row">
+                                                <div class="col col-lg-4">
+                                                    <label for="">Name</label>
+                                                    <input type="text" name="name" id="" class="form-control" required>
+                                                </div>
+                                                <div class="col col-lg-4">
+                                                    <label for="">Phone</label>
+                                                    <input type="tel" pattern="[0-9-()-+ ]*" id="phone" name="phone"
+                                                        class="form-control" required>
+                                                </div>
+                                                <div class="col col-lg-4">
+                                                    <label for="">Email</label>
+                                                    <input type="email" name="name" id="" class="form-control" required>
+                                                </div>
+                                                <div class="col col-lg-4">
+                                                    <label for="">Country</label>
+                                                    <select id="country" required name="country" class="form-control">
+                                                    </select>
+                                                </div>
+                                                <div class="col col-lg-4">
+                                                    <label for="">State</label>
+                                                    <select name="state" required id="state" class="form-control">
+                                                        <option value="-1">Select State</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col col-lg-4">
+                                                    <label for="">Zip Code</label>
+                                                    <input type="text" name="name" id="" class="form-control" required
+                                                        placeholder="93944">
+                                                </div>
+                                                <div class="col col-lg-12">
+                                                    <label for="">Address</label>
+                                                    <input type="text" name="name" id="" class="form-control" required>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--  Payment Method-->
+                            <div class="col-lg-12 Payment">
+                                <h4>Payment Method</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+
+                                        <div class="card">
+
+                                            <div class="accordion" id="accordionExample">
+
+                                                <div class="card mb-0">
+                                                    <div class="card-header p-0" id="headingTwo">
+                                                        <h2 class="mb-0">
+                                                            <button
+                                                                class="btn btn-light btn-block text-left collapsed p-3 rounded-0 border-bottom-custom"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseTwo" aria-expanded="false"
+                                                                aria-controls="collapseTwo">
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-between">
+
+                                                                    <span>Paypal</span>
+                                                                    <img src="/admin/layout/imges/icons/7kQEsHU.png"
+                                                                        width="30">
+
+
+                                                                </div>
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                        data-parent="#accordionExample">
+                                                        <div class="card-body">
+
+                                                            <input type="text" class="form-control Paypal"
+                                                                placeholder="Paypal email" id="Paypal" name="paypal"
+                                                                form="my-form">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card mb-0">
+                                                    <div class="card-header p-0">
+                                                        <h2 class="mb-0">
+                                                            <button
+                                                                class="btn btn-light btn-block text-left p-3 rounded-0"
+                                                                data-toggle="collapse" data-target="#collapseOne"
+                                                                aria-expanded="true" aria-controls="collapseOne">
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-between">
+
+                                                                    <span>Credit card</span>
+                                                                    <div class="icons">
+                                                                        <img src="/admin/layout/imges/icons/W1vtnOV.png"
+                                                                            width="30">
+                                                                        <img src="/admin/layout/imges/icons/2ISgYja.png"
+                                                                            width="30">
+                                                                        <img src="/admin/layout/imges/icons/35tC99g.png"
+                                                                            width="30">
+                                                                        <img src="/admin/layout/imges/icons/W1vtnOV.png"
+                                                                            width="30">
+                                                                    </div>
+
+                                                                </div>
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+
+                                                    <div id="collapseOne" class="collapse show"
+                                                        aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                        <div class="card-body payment-card-body">
+
+                                                            <span class="font-weight-normal card-text">Card
+                                                                Number</span>
+                                                            <div class="input">
+
+                                                                <i class="fa fa-credit-card"></i>
+                                                                <input type="text" class="form-control credit"
+                                                                    placeholder="0000 0000 0000 0000" name="credit"
+                                                                    form="my-form">
+
+                                                            </div>
+
+                                                            <div class="row mt-3 mb-3">
+
+                                                                <div class="col-md-6">
+
+                                                                    <span class="font-weight-normal card-text">Expiry
+                                                                        Date</span>
+                                                                    <div class="input">
+
+                                                                        <i class="fa fa-calendar"></i>
+                                                                        <input type="text"
+                                                                            class="form-control creditdata"
+                                                                            placeholder="MM/YY" form="my-form"
+                                                                            name="data">
+
+                                                                    </div>
+
+                                                                </div>
+
+
+                                                                <div class="col-md-6">
+
+                                                                    <span
+                                                                        class="font-weight-normal card-text">CVC/CVV</span>
+                                                                    <div class="input">
+
+                                                                        <i class="fa fa-lock"></i>
+                                                                        <input type="text" class="form-control cvv"
+                                                                            placeholder="000" maxlength="3"
+                                                                            form="my-form" name="cvv">
+
+                                                                    </div>
+
+                                                                </div>
+
+
+                                                            </div>
+
+                                                            <span class="text-muted certificate-text"><i
+                                                                    class="fa fa-lock"></i> Your transaction is
+                                                                secured with ssl certificate</span>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+
+        function PaymentMethod() {
+            var Paypal = document.querySelector('.Paypal');
+            var credit = document.querySelector('.credit');
+            var creditdata = document.querySelector('.creditdata');
+            var cvv = document.querySelector('.cvv');
+            if (Paypal.value == "" && (credit.value == "" || creditdata.value == "" || cvv.value == "")) {
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Select a payment method',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                })
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+    </script>
+    <script src="/admin/layout/js/countries.js"></script>
+
+    <script src="/admin/layout/js/backend.js"></script>
+    <script src="/admin/layout/phone-number-with-country-code/build/js/intlTelInput.js"></script>
+    <script>
+        // Vanilla Javascript
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, ({
+            // options here
+        }));
+
+        $(document).ready(function () {
+            $('.iti__flag-container').click(function () {
+                var countryCode = $('.iti__selected-flag').attr('title');
+                var countryCode = countryCode.replace(/[^0-9]/g, '')
+                $('#phone').val("");
+                $('#phone').val("+" + countryCode + " " + $('#phone').val());
+            });
+        });
+    </script>
+
+</body>
+
+</html>

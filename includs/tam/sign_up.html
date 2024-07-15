@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/admin/layout/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/admin/layout/css/style.css">
+    <link rel="stylesheet" href="/admin/layout/css/FrameWork.css">
+    <link rel="stylesheet" href="/admin/layout/css/all.min.css"/>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cairo:wght@300;400;700&family=Epilogue:wght@400;600;700&family=Merienda+One&family=Montserrat:wght@300;700&family=Nunito:wght@300;400;600&family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&family=Roboto:wght@100;300;400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <!-- phone  number -->
+    <link rel="stylesheet" href="admin/layout/phone-number-with-country-code/build/css/intlTelInput.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="page-sign">
+            <div class="img">
+                <img src="admin/layout/imges/pexels-tiff-ng-3302537.png" alt="">
+            </div>
+            <div class="contain">
+            <div class="formbx">
+                <h2>Create your account</h2>
+                <form onsubmit ="return validateForm()" action="">
+                    <div class="namebx form-outline ">
+                        <div class="firstname inputbx">
+                            <span class="form-label">First name</span>
+                            <input type="text" name="firstname" placeholder="First Name" required class="form-control ">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="lastname inputbx">
+                            <span class="form-label">Last name</span>
+                            <input type="text" name="lastname" placeholder="Last Name" required class="form-control ">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="ContactInfobx ">
+                        <div class="email inputbx ">
+                            <span>Email</span>
+                            <input type="email" name="email" placeholder="Enter your Email" id="enail" required class="form-control">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="phonebx inputbx">
+                            <span>Phone number</span>
+                            <input type="tel" pattern="[0-9-()-+ ]*" id="phone"  name="phone"  class="phone form-control"  required >
+                        </div>
+                    </div>
+                    <div class="passwordbx">
+                        <div class="inputbx ">
+                            <span>Password</span>
+                            <input type="password" name="password" placeholder="A23s@#s1d" id="password" required class="pass form-control">
+                            <i class="fa-solid fa-key"></i>
+                            <i onclick="visibili()" class="fa-regular fa-eye hide" id="hide"></i>
+                            <span class="msg1 msg" id=msg1></span>
+                        </div>
+                        <div class="inputbx ">
+                            <span>Confirm</span>
+                            <input type="password" name="password" placeholder="Confirm Password" id="Confirm" required class="pass form-control">
+                            <i class="fa-solid fa-key"></i>
+                            <span class="msg2 msg" id=msg2></span>
+                        </div>
+                    </div>
+                    <div class="address ">
+                        <div class="country inputbx">
+                            <span>Country</span>
+                            <select id="country" required name="country" class="form-control">
+                                
+                            </select>
+                        </div>
+                        <div class="state inputbx">
+                            <span>State</span>
+                            <select name="state" required id="state" class="form-control">
+                                <option value="-1">Select State</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inputbx">
+                        <input type="submit"  value="Login" name="submit" class="btn btn-primary">
+                    </div>
+                </form>
+                <!-- End Form -->
+                <div class="or">or</div>
+                <div class="log-with">
+                    <a href="#" class="face"><i class="fa-brands fa-facebook-f fa-lg"></i></i></a>
+                    <a href="#" class="twi"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                    <a href="#" class="goo"><i class="fa-brands fa-google-plus-g fa-lg"></i></a>
+                </div>
+                <div class="reg">
+                    <p>If you already have an account? <a href="#">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="admin/layout/js/backend.js"></script>
+    <script src="admin/layout/js/countries.js"></script>
+    <script src="admin/layout/phone-number-with-country-code/build/js/intlTelInput.js"></script>
+    <script>
+    // Vanilla Javascript
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input,({
+      // options here
+    }));
+
+    $(document).ready(function() {
+        $('.iti__flag-container').click(function() { 
+          var countryCode = $('.iti__selected-flag').attr('title');
+          var countryCode = countryCode.replace(/[^0-9]/g,'')
+          $('#phone').val("");
+          $('#phone').val("+"+countryCode+" "+ $('#phone').val());
+       });
+    });
+  </script>
+    <script language="javascript">
+
+    </script>
+</body>
+</html>

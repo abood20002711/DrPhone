@@ -1,0 +1,345 @@
+<!-- Font Jost - 400 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/admin/layout/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/admin/layout/css/style.css">
+    <link rel="stylesheet" href="/admin/layout/css/FrameWork.css">
+    <link rel="stylesheet" href="/admin/layout/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cairo:wght@300;400;700&family=Epilogue:wght@400;600;700&family=Merienda+One&family=Montserrat:wght@300;700&family=Nunito:wght@300;400;600&family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&family=Roboto:wght@100;300;400;500;700&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <!-- Hambargers css -->
+    <link rel="stylesheet" href="/admin/layout/css/Hambargers.css">
+    <link rel="stylesheet" href="/admin/layout/css/hamburgers/hamburgers.css">
+
+
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="">LOGO</a>
+
+            <div class="search">
+                <span class="i-ser"><i class="fa fa-search" aria-hidden="true"></i></span>
+                <input id="search" type="search" class="form-control" placeholder="Search any thing">
+                <span onclick="clear_fild()" class="i-remo" id="search"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+
+            <ul class="icons">
+                <li><a class="loginbtn ">Log in</a></li>
+                <li><a href="" class="favourites"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="#" class="user" id="accountSettings" onclick="shoowDropDown()"><i
+                            class="fa-regular fa-user"></i></a></li>
+
+                <ul class="dropdown">
+                    <li><a href=""><i class="fa-solid fa-user-pen"></i>Edit Profile</a></li>
+                    <li><a href=""><i class="fa-solid fa-gear"></i>Settings</a></li>
+                    <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+                </ul>
+
+                <li><a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Start mega menu -->
+    <div class="mega-menu">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hamburger hamburger--collapse " id="hamburger">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+            <div class="memu"></div>
+            <ul class="menu-main">
+                <div class="mobile-menu-head">
+                    <div class="go-back"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                    <div class="currnet-menu-title">Shop</div>
+                    <div class="close-menu">&times;</div>
+                </div>
+                <li class="has-children"><a>Jewelry and accessories </a>
+                    <i class="fa fa-angle-down"></i>
+                    <div class="sub-menu" id="sub-menu">
+                        <ul>
+                            <li><a>rings</a>
+                                <ul>
+                                    <li><a href="">Rings with various stones</a></li>
+                                    <li><a href="">stackable rings</a></li>
+                                    <li><a href="">Alliances</a></li>
+                                    <li><a href="">Lonely</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Earrings</a>
+                                <ul>
+                                    <li><a href="">Rings with various stones</a></li>
+                                    <li><a href="">stackable rings</a></li>
+                                    <li><a href="">Alliances</a></li>
+                                    <li><a href="">Lonely</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">necklaces</a>
+                                <ul>
+                                    <li><a href="">Rings with various stones</a></li>
+                                    <li><a href="">stackable rings</a></li>
+                                    <li><a href="">Alliances</a></li>
+                                    <li><a href="">Lonely</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">bracelets</a>
+                                <ul>
+                                    <li><a href="">Rings with various stones</a></li>
+                                    <li><a href="">stackable rings</a></li>
+                                    <li><a href="">Alliances</a></li>
+                                    <li><a href="">Lonely</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Jewelry and body jewelry</a>
+                                <ul>
+                                    <li><a href="">Rings with various stones</a></li>
+                                    <li><a href="">stackable rings</a></li>
+                                    <li><a href="">Alliances</a></li>
+                                    <li><a href="">Lonely</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="has-children"><a>Clothes and shoes </a><i class="fa fa-angle-down"></i>
+
+                </li>
+                <li class="has-children"><a>home and decoration</a><i class="fa fa-angle-down"></i></li>
+                <li class="has-children"><a>toys and leisure</a><i class="fa fa-angle-down"></i></li>
+                <li class="has-children"><a>Art and collectibles </a><i class="fa fa-angle-down"></i></li>
+                <li class="has-children"><a>Tools </a><i class="fa fa-angle-down"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="site-content">
+        <div class="FQA">
+            <div class="container">
+                <div class="FQA-head">
+                    <h1>Frequently Asked Questions</h1>
+                    <p>This Agreement was last modified on 18th february 2016</p>
+                </div>
+                <div class="FQA-content">
+                    <div class="content-head">
+                        <h5>Shipping Information</h5>
+                    </div>
+                    <div class="content-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="content">
+                                    <h3>What Shipping Methods Are Available?</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien lorem, consectetur et turpis id, blandit
+                                    interdum metus. Morbi sed ligula id elit mollis efficitur ut nec ligula. Proin erat magna, pellentesque at elementum at,
+                                    eleifend a tortor.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="content">
+                                    <h3>How Long Will it Take To Get My Package?</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sapien lorem, consectetur et turpis id, blandit
+                                    interdum metus. Morbi sed ligula id elit mollis efficitur ut nec ligula. Proin erat magna, pellentesque at elementum at,
+                                    eleifend a tortor.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="content">
+                                    <h3>How Do I Track My Order?</h3>
+                                    <p>Integer ex turpis, venenatis vitae nibh vel, vestibulum maximus quam. Ut pretium orci ac vestibulum porttitor. Fusce
+                                    tempus diam quis justo porttitor gravida.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="content">
+                                    <h3>Do I Need A Account To Place Order?</h3>
+                                    <p>Integer ex turpis, venenatis vitae nibh vel, vestibulum maximus quam. Ut pretium orci ac vestibulum porttitor. Fusce
+                                    tempus diam quis justo porttitor gravida.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="secound-FQA">
+            <div class="container">
+                <div class="FQA-head">
+                    <h1>FAQ Second Version</h1>
+                </div>
+                <div class="FQA-content">
+                    <div class="row">
+                        <div class="col  col-lg-12">
+                            <ul class="arrow">
+                                <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <h2>What Shipping Methods Are Available?</h2>
+                                    <p>Vestibulum velit nibh, egestas vel faucibus vitae, feugiat sollicitudin urna. Praesent iaculis id ipsum sit
+                                        amet
+                                        pretium. Aliquam tristique sapien nec enim euismod, scelerisque facilisis arcu consectetur.</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <h2>How Long Will it Take To Get My Package?</h2>
+                                    <p>Vestibulum velit nibh, egestas vel faucibus vitae, feugiat sollicitudin urna. Praesent iaculis id ipsum sit
+                                        amet
+                                        pretium. Aliquam tristique sapien nec enim euismod, scelerisque facilisis arcu consectetur.</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <h2>How Do I Track My Order?</h2>
+                                    <p>Vestibulum velit nibh, egestas vel faucibus vitae, feugiat sollicitudin urna. Praesent iaculis id ipsum sit
+                                        amet
+                                        pretium. Aliquam tristique sapien nec enim euismod, scelerisque facilisis arcu consectetur.</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" checked>
+                                    <i></i>
+                                    <h2>How Do I Place an Order?</h2>
+                                    <p>Vestibulum velit nibh, egestas vel faucibus vitae, feugiat sollicitudin urna. Praesent iaculis id ipsum sit
+                                        amet
+                                        pretium. Aliquam tristique sapien nec enim euismod, scelerisque facilisis arcu consectetur.</p>
+                                </li>
+                            <li>
+                                <input type="checkbox" checked>
+                                <i></i>
+                                <h2>How Should I to Contact if I Have Any Queries?</h2>
+                                <p>Vestibulum velit nibh, egestas vel faucibus vitae, feugiat sollicitudin urna. Praesent iaculis id ipsum sit
+                                    amet
+                                    pretium. Aliquam tristique sapien nec enim euismod, scelerisque facilisis arcu consectetur.</p>
+                            </li>
+                            <li>
+                                <input type="checkbox" checked>
+                                <i></i>
+                                <h2>Do I Need an Account to Place an Order?</h2>
+                                <p>Vestibulum velit nibh, egestas vel faucibus vitae, feugiat sollicitudin urna. Praesent iaculis id ipsum sit
+                                    amet
+                                    pretium. Aliquam tristique sapien nec enim euismod, scelerisque facilisis arcu consectetur.</p>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div></div>
+        <div class="site-footer">
+            <div class="footer-newslettet">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col col-lg-12">
+                            <div class="context">
+                                <h3>Sign Up For Newsletters</h3>
+                                <p>Get E-mail updates about our latest shop and<span> special offers</span>.</p>
+                            </div>
+                            <form action="" class="email">
+
+                                <input type="email" name="" id="" placeholder="Your Email Address">
+                                <button>Sign Up</button>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-5 col-md-4 col-sm-12">
+                            <div class="logo">
+                                LOGO
+                            </div>
+                            <div class="call">
+                                <i class="fa-solid fa-headset"></i>
+                                <div class="call-about">
+                                    <span>Got Questions ? Call us 24/7!</span>
+                                    <p>0781211215,0781211215</p>
+                                </div>
+                            </div>
+                            <div class="Address">
+                                <p>Contact Info</p>
+                                <span>Jordan,Amman,Marka</span>
+                                <div class="social">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" col col-lg-2 col-md-3 col-sm-12 ">
+                            <h4>Find It Fast</h4>
+                            <ul>
+                                <li><a href="#">Smart Phone</a></li>
+                                <li><a href="#">Smart Phone</a></li>
+                                <li><a href="#">Smart Phone</a></li>
+                                <li><a href="#">Smart Phone</a></li>
+                                <li><a href="#">Smart Phone</a></li>
+                                <li><a href="#">Smart Phone</a></li>
+                                <li><a href="#">Smart Phone</a></li>
+                                <li><a href="#">Smart Phone</a></li>
+                            </ul>
+                        </div>
+                        <div class="col col-lg-2 col-md-2 col-sm-12">
+                            <h4>&nbsp;</h4>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col col-lg-2 col-md-3 col-sm-12">
+                            <h4>Customer Care</h4>
+                            <ul>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Customer Service</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="copyright-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col col-lg-12">
+                            <p>© <span>Dr.Phone </span>- All Rights Reserved</p>
+                            <img src="/admin/layout/imges/HomePage/patment-icon1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="/admin/layout/js/backend.js"></script>
+
+
+</body>
+
+</html>

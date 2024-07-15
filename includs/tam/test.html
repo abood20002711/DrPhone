@@ -1,0 +1,47 @@
+<div class="content">
+    <div class="head">
+        <div class="container">
+            <a href="#" class="navicon" onclick="showslidbar()"><i class="fa-solid fa-bars"></i></a>
+
+            <div class="search-box">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Search products" class="form-control" />
+                </div>
+            </div>
+            <div class="icons">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-moon"></i></a></li>
+                    <li class="Notifications"><a href="#"><i class="fa-solid fa-bell"></i></i></a></li>
+                    <li><a href="#" class="profile"><img width="40" height="40"
+                                src="layout/imges/user/<?php echo $result['Avater'] ?>" alt=""
+                                onclick="showProfileMenu()"></a></li>
+                </ul>
+                <div class="profile-menu ">
+                    <div class="profile-name">
+                        <img src="layout/imges/avatar.png" alt="">
+                        <span>
+                            <?php echo $result['Fullname']; ?>
+                        </span>
+                    </div>
+                    <hr>
+                    <?php
+                        echo "
+                                <a href='UpdateUser.php?id=" . $result['UserID'] . "' >
+                            
+                                <i class='fa-regular fa-user'></i>
+                                <span>My profile</span>
+                            </a>
+                                ";
+                        ?>
+                    <a href="Logout.php">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
